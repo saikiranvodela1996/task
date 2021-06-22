@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Task</string>
+
+    <string name="email_txt">Email</string>
+
+
+    <string name="number_txt">Number</string>
+    <string name="submit_txt">Submit</string>
+    <string name="no_records_txt">No Records found</string>
+    <string name="enter_validemail_msg">Please enter valid email</string>
+    <string name="already_enteredemail_msg">Entered Email is already registered</string>
+    <string name="enter_numb_msg">Please enter Number</string>
+    <string name="enter_numbregistered_msg">Entered Number is already registered</string>
+    <string name="added_successfully_msg">Record is added Successfully</string>
+
+
+
+</resources>

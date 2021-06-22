@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".activities.MainActivity">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <EditText
+        android:id="@+id/email_Et"
+        style="@style/TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_bgcornors"
+        android:hint="@string/email_txt"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/number_Et"
+        style="@style/TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_bgcornors"
+        android:hint="@string/number_txt"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        style="@style/TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:text="@string/submit_txt"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/noList_tv"
+        style="@style/TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_records_txt" />
+
+</LinearLayout>
